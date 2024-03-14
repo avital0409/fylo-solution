@@ -10,6 +10,7 @@
     <link href="styles.css" rel="stylesheet">
     </link>
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <script src="script.js"></script>
     <title>Fylo data storage component</title>
 </head>
 
@@ -19,20 +20,20 @@
         <section class="fylo-container">
             <img class="logo" src="images/logo.svg" alt="Fylo logo" />
             <section class="icons">
-                <div class="icon-img">
+                <div class="icon-img" onclick="getFile()">
                     <img src="images/icon-document.svg" alt="" aria-hidden="true" />
                 </div>
-                <div class="icon-img">
+                <div class="icon-img" onclick="getFile()">
                     <img src="images/icon-folder.svg" alt="" aria-hidden="true" />
                 </div>
-                <div class="icon-img">
+                <div class="icon-img "onclick="getFile()">
                     <img src="images/icon-upload.svg" alt="" aria-hidden="true" />
                 </div>
             </section>
         </section>
         <!-- Storage Container -->
         <section class="storage-container">
-            <h1>You've used <span>815 MB</span> of your storage</h1>
+            <h1>You've used <span id="mb-usage"></span> of your storage</h1>
             <!-- Progress Bar -->
             <section class="progress-bar">
                 <div class="gradient-bar">
@@ -43,11 +44,11 @@
             </section>
             <h2>
                 <span>0 MB</span>
-                <span>100 MB</span>
+                <span id="mb-limit"></span>
             </h2>
             <!-- GB left -->
             <section class="gb-left">
-                <p>185 <span>MB left</span></p>
+                <p id="mb-left"></p>
             </section>
         </section>
     </main>

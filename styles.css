@@ -127,15 +127,15 @@ h1 span {
 }
 
 .gradient-bar {
-  display: flex;
-  align-items: center;
-  background: var(--gradient-bar);
-  background: var(--gradient);
-  border-radius: 50px;
-  filter: saturate();
-  width: 74%;
-  height: 0.8rem;
-  position: relative;
+    display: flex;
+    align-items: center;
+    background: var(--gradient-bar);
+    background: var(--gradient);
+    border-radius: 50px;
+    filter: saturate();
+    height: 0.8rem;
+    position: relative;
+    transition: width 2s
 }
 .dot-container {
   position: relative;
