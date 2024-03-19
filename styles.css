@@ -164,7 +164,7 @@ h2 {
 }
 
 /** GB left **/
-.gb-left p {
+.storage-left p {
   color: var(--dark-blue);
   font-size: 2.4rem;
   font-weight: 700;
@@ -173,7 +173,7 @@ h2 {
   display: inline-block;
 }
 
-.gb-left span {
+.storage-left span {
   font-size: 0.8rem;
   text-transform: uppercase;
   color: var(--grayish-blue);
@@ -183,7 +183,7 @@ h2 {
   letter-spacing: 1px;
 }
 
-.gb-left {
+.storage-left {
   position: absolute;
   border-radius: 10px 10px 0 10px;
   max-width: 9.6rem;
@@ -196,7 +196,7 @@ h2 {
   padding: 0.8rem;
   text-align: right;
 }
-.gb-left:after {
+.storage-left:after {
   content: "";
   position: absolute;
   bottom: 0;
